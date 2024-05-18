@@ -1,0 +1,9 @@
+real = float(input('Quanto dinheiro você tem? RS$'))
+
+dolar = real / 5.10
+euro = real / 5.56
+peso = real / 0.0058
+
+print ('com R${:.2f} você pode obter US${:.2f}'.format(real, dolar))
+print ('com R${:.2f} você pode obter EUR${:.2f}'.format(real, euro))
+print ('com RS${:.2f} você pode obter ARS${:.2f}'.format(real, peso))
