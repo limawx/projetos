@@ -1,0 +1,3 @@
+salário = float(input('Qual seu salário atual? RS$'))
+aumento = salário + (salário * 15 / 100)
+print('seu antigo salário era RS${:.2f} e com 15% de aumento, ele vai ganhar {:.2f}'.format(salário,aumento))
