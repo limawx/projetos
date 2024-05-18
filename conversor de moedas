@@ -1,0 +1,23 @@
+def converter_moeda(valor_real):
+    dolar = valor_real / 5.10
+    euro = valor_real / 5.56
+    peso = valor_real / 0.0058
+
+    print(f"Com R${valor_real:.2f}, você pode obter:")
+    print(f"US${dolar:.2f} (Dólar dos Estados Unidos)")
+    print(f"EUR${euro:.2f} (Euro)")
+    print(f"ARS${peso:.2f} (Peso Argentino)")
+
+def main():
+    valor_real = float(input("Quanto dinheiro você tem? R$"))
+
+    converter_moeda(valor_real)
+
+    resposta = input("Deseja converter para mais alguma moeda? (Digite 'sim' ou 'não'): ")
+    if resposta.lower() == "sim":
+        print("Erro: Não existem mais moedas em nosso banco de dados.")
+    else:
+        print("Obrigado por usar nosso conversor de moedas!")
+
+if __name__ == "__main__":
+    main()
